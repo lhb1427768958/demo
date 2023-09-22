@@ -1,0 +1,54 @@
+Arguments: 
+  D:\mynode\node.exe D:\mynode\node_global\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\软件安装\git\Git\cmd;D:\ruanjian\Git\cmd;D:\ruanjian\nvm;C:\Program Files\nodejs;D:\mynode\node_global\node_modules\yarn\bin;D:\mynode\node_global\bin\;D:\mynode\node_global;D:\ruanjian\stable build\微信web开发者工具\dll;D:\mynode\;D:\mynode\node_global\node_modules\yarn\bin;C:\Users\李海斌\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\ruanjian\idea\IntelliJ IDEA 2021.3.1\bin;;C:\Users\李海斌\AppData\Local\GitHubDesktop\bin;node_global;D:\ruanjian\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs\node_global\bin;C:\Users\李海斌\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.19.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, mkdir 'D:\antdpro\umi创建\myapp\node_modules\lint-staged\node_modules'
+
+npm manifest: 
+  {
+    "private": true,
+    "author": "lihaibin <lihaibin@pinming.cn>",
+    "scripts": {
+      "dev": "max dev",
+      "build": "max build",
+      "format": "prettier --cache --write .",
+      "prepare": "husky install",
+      "postinstall": "max setup",
+      "setup": "max setup",
+      "start": "npm run dev"
+    },
+    "dependencies": {
+      "@ant-design/icons": "^5.0.1",
+      "@ant-design/pro-components": "^2.4.4",
+      "@umijs/max": "^4.0.72",
+      "antd": "^5.4.0"
+    },
+    "devDependencies": {
+      "@types/react": "^18.0.33",
+      "@types/react-dom": "^18.0.11",
+      "husky": "^8.0.3",
+      "lint-staged": "^13.2.0",
+      "prettier": "^2.8.7",
+      "prettier-plugin-organize-imports": "^3.2.2",
+      "prettier-plugin-packagejson": "^2.4.3",
+      "typescript": "^5.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
