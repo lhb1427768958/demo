@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { PageContainer, ProTable, ProColumns, ActionType } from '@ant-design/pro-components';
 import { Button, App, message, Modal } from 'antd';
 import { findSchoolList, findList } from '@/services/data';
-import { UserInfoTableListItem, dataList } from './data.d';
+import { UserInfoTableListItem, dataList, colleageList } from './data.d';
 import FormModal from './components/FormModal';
 import moment from 'moment';
 
@@ -15,10 +15,11 @@ const HomePage: React.FC = () => {
     const [schoolList, setSchoolList] = useState([]);
     const [dataSource, setDataSource] = useState<UserInfoTableListItem[]>(dataList);
 
-    // 获取列表
+    // // 获取列表
     const getSchoolList = async () => {
-        const res = await findSchoolList({ pageSize: 999 });
-        const list = res.data.map((item: any) => (
+        // const res = await findSchoolList({ pageSize: 999 });
+        // const list = res.data.map((item: any) => (
+        const list: any = colleageList.map((item: any) => (
             {
                 key: item.schoolId,
                 label: item.schoolName,

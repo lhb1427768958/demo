@@ -14,7 +14,7 @@ export interface UserInfoRequest {
     email?: any;
   }
   
-  export interface UserInfoTableListItem extends UserInfoAddOrUpdate {
+  export interface UserInfoTableListItem extends UserInforUpdate {
     createTime?: string;
   }
 
